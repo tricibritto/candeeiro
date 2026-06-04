@@ -118,14 +118,20 @@ A marca representa a luz que guia moradores e empreendedores até novas oportuni
 ## 📂 Estrutura do Projeto
 
 ```text
-projeto/
+candeeiro/
 │
 ├── backend/
-│   ├── controllers/
-│   ├── routes/
-│   ├── data/
-│   ├── app.js
-│   └── server.js
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── negocioController.js
+│   │   │
+│   │   ├── routes/
+│   │   │   └── negocioRoutes.js
+│   │   │
+│   │   └── app.js
+│   │
+│   ├── package.json
+│   └── package-lock.json
 │
 ├── frontend/
 │   ├── assets/
@@ -140,6 +146,15 @@ projeto/
 │   ├── index.html
 │   ├── sobre.html
 │   └── contato.html
+│
+├── prints/
+│   ├── home.png
+│   ├── inicio.png
+│   ├── sobre.png
+│   ├── contato.png
+│   ├── negocios.png
+│   ├── postman-get.png
+│   └── postman-post.png
 │
 └── README.md
 ```
@@ -202,7 +217,7 @@ Resposta:
 Inserir print da página inicial.
 
 ![Página Inicial](prints/home.png)
-
+![Página Inicial](prints/inicio.png)
 ---
 
 ### Página Sobre
@@ -238,8 +253,6 @@ Inserir print da página contato.
 ## 👥 Integrantes da Equipe
 
 * Trícia de Britto Matos
-
-(Adicionar os demais integrantes, caso existam)
 
 ---
 
