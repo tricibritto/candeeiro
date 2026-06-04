@@ -264,3 +264,4 @@ Candeias - Bahia
 ## 📄 Licença
 
 Projeto desenvolvido exclusivamente para fins acadêmicos.
+=======
