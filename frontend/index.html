@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Candeeiro</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+         <div class="logo">
+                <img src="assets/logo.png" alt="Logo Candeeiro">
+                <div>
+                    <h1>Candeeiro</h1>
+                    <p>Iluminando oportunidades locais</p>
+                </div>
+            </div>
+
+        <ul>
+
+            <li><a href="index.html">Início</a></li>
+
+            <li><a href="sobre.html">Sobre</a></li>
+
+            <li><a href="contato.html">Contato</a></li>
+
+        </ul>
+
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="tag">
+                    Comércio Local de Candeias
+                </span>
+
+                <h1>
+                    Iluminando oportunidades locais
+                </h1>
+
+                <p>
+                    Descubra empresas, promoções,
+                    eventos e serviços da cidade em um único lugar.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button onclick="document.querySelector('.cadastro').scrollIntoView()">
+                        Cadastrar Negócio
+                    </button>
+
+                    <button class="btn-secundario"
+                            onclick="document.querySelector('.negocios').scrollIntoView()">
+                        Explorar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-icon">
+
+                <i class="fa-solid fa-fire-flame-curved"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="estatisticas">
+
+        <div class="stat">
+
+            <h2>100+</h2>
+
+            <p>Negócios</p>
+
+        </div>
+
+        <div class="stat">
+
+            <h2>50+</h2>
+
+            <p>Eventos</p>
+
+        </div>
+
+        <div class="stat">
+
+            <h2>300+</h2>
+
+            <p>Promoções</p>
+
+        </div>
+
+    </section>
+
+    <section class="categorias">
+
+        <div class="categoria">
+            ☕ Cafeterias
+        </div>
+
+        <div class="categoria">
+            🍕 Restaurantes
+        </div>
+
+        <div class="categoria">
+            💄 Beleza
+        </div>
+
+        <div class="categoria">
+            🛠 Serviços
+        </div>
+
+        <div class="categoria">
+            🏋 Academia
+        </div>
+
+    </section>
+
+    <section class="cadastro">
+
+        <h2>
+            Cadastre seu negócio
+        </h2>
+
+        <form id="formNegocio">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Nome do negócio"
+                required>
+
+            <input
+                type="text"
+                id="categoria"
+                placeholder="Categoria"
+                required>
+
+            <input
+                type="text"
+                id="promocao"
+                placeholder="Promoção">
+
+            <input
+                type="text"
+                id="evento"
+                placeholder="Evento">
+
+            <input
+                type="text"
+                id="servico"
+                placeholder="Serviço">
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="negocios">
+
+        <h2>
+            Negócios cadastrados
+        </h2>
+
+        <div id="listaNegocios"></div>
+
+    </section>
+
+    <footer>
+
+        <h3>
+            Candeeiro
+        </h3>
+
+        <p>
+            Trícia de Britto Matos
+        </p>
+
+        <p>
+            Projeto desenvolvido para a disciplina
+            Desenvolvimento de APIs
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

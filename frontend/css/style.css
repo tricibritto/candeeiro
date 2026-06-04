@@ -1,0 +1,633 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   CORES
+========================= */
+
+:root{
+
+    --marrom:#7C2D12;
+
+    --laranja:#EA580C;
+
+    --laranja-claro:#FDBA74;
+
+    --bege:#FFF7ED;
+
+    --branco:#FFFFFF;
+
+    --texto:#3B2F2F;
+}
+
+/* =========================
+   GERAL
+========================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:var(--bege);
+
+    color:var(--texto);
+
+    line-height:1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    background:var(--marrom);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 10%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:bold;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.navbar a:hover{
+
+    color:var(--laranja-claro);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px;
+    
+    background:
+    linear-gradient(
+        rgba(124,45,18,.88),
+        rgba(234,88,12,.88)
+    );
+
+    color:white;
+}
+
+.hero-content{
+
+    max-width:1200px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+}
+
+.hero-text{
+
+    flex:1;
+}
+
+.hero-text h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    2px 2px 10px rgba(0,0,0,.25);
+}
+
+.hero-text p{
+
+    font-size:1.2rem;
+
+    max-width:600px;
+}
+
+.hero-icon{
+
+    flex:1;
+
+    text-align:center;
+}
+
+.hero-icon i{
+
+    font-size:15rem;
+
+    color:rgba(255,255,255,.18);
+}
+
+.tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.15);
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.hero-buttons button{
+
+    padding:15px 25px;
+}
+
+.btn-secundario{
+
+    background:transparent !important;
+
+    border:2px solid white !important;
+}
+
+.btn-secundario:hover{
+
+    background:white !important;
+
+    color:var(--marrom) !important;
+}
+
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+.estatisticas{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.stat{
+
+    background:white;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    padding:30px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+.stat h2{
+
+    color:var(--laranja);
+
+    font-size:2rem;
+}
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.categoria{
+
+    background:white;
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.categoria:hover{
+
+    background:var(--laranja);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.cadastro,
+.negocios,
+.pagina{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+}
+
+.cadastro h2,
+.negocios h2,
+.pagina h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:var(--marrom);
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:1rem;
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border:2px solid var(--laranja);
+
+    box-shadow:
+    0 0 10px rgba(234,88,12,.25);
+}
+
+textarea{
+
+    min-height:150px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button{
+
+    background:var(--laranja);
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:var(--marrom);
+}
+
+/* =========================
+   GRID DE CARDS
+========================= */
+
+#listaNegocios{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border-left:6px solid var(--laranja);
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.12);
+}
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+}
+
+.card-icon{
+
+    font-size:2rem;
+}
+
+.badge{
+
+    background:var(--laranja);
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:.8rem;
+
+    font-weight:bold;
+}
+
+.card h3{
+
+    color:var(--marrom);
+
+    margin-bottom:15px;
+}
+
+.card-info p{
+
+    margin:8px 0;
+}
+
+/* =========================
+   AÇÕES DOS CARDS
+========================= */
+
+.card-actions{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.btn-editar{
+
+    background:#2563EB;
+}
+
+.btn-excluir{
+
+    background:#DC2626;
+}
+
+.btn-editar:hover{
+
+    background:#1D4ED8;
+}
+
+.btn-excluir:hover{
+
+    background:#B91C1C;
+}
+
+/* =========================
+   SOBRE E CONTATO
+========================= */
+
+.pagina h2{
+
+    color:var(--laranja);
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+}
+
+.pagina ul{
+
+    margin-left:20px;
+}
+
+.contato-form{
+
+    margin-top:25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:var(--marrom);
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+}
+
+footer p{
+
+    margin:5px 0;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:900px){
+
+    .hero-content{
+
+        flex-direction:column;
+    }
+
+    .hero-icon{
+
+        display:none;
+    }
+
+    .estatisticas{
+
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .navbar ul{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .hero-text h1{
+
+        font-size:2.5rem;
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
