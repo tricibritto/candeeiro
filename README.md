@@ -216,8 +216,8 @@ Resposta:
 
 Inserir print da página inicial.
 
-![Página Inicial](prints/home.png)
 ![Página Inicial](prints/inicio.png)
+![Página Inicial](prints/home.png)
 ---
 
 ### Página Sobre
